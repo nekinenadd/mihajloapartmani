@@ -3,61 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vacation Rentals Srbija</title>
+  <title>Vacation Rentals</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-
-  <header>
-    <div class="container">
-      <h1>Vacation Rentals Srbija</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Početna</a></li>
-          <li><a href="zlatibor.html">Zlatibor</a></li>
-          <li><a href="novosad.html">Novi Sad</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
+  <!-- Popup za izbor apartmana -->
+  <div id="apartmentPopup" class="popup-overlay">
+    <div class="popup">
+      <h2>Dobrodošli!</h2>
+      <p>Izaberite apartman:</p>
+      <div class="options">
+        <button onclick="goToApartment('zlatibor')">Apartman Mihajlo - Zlatibor</button>
+        <button onclick="goToApartment('novisad')">Apartman Casablanca - Novi Sad</button>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <section class="hero">
-    <h2>Izaberite svoj savršen odmor</h2>
-    <p>Planina ili grad – smeštaj po vašoj meri</p>
-    <a href="#locations" class="btn">Pogledaj lokacije</a>
-  </section>
-
-    <section class="hero">
-    <h2>Izaberite svoj savršen odmor</h2>
-    <p>Planina ili grad – smeštaj po vašoj meri</p>
-    <a href="#locations" class="btn">Pogledaj lokacije</a>
-  </section>
-
-    <section class="hero">
-    <h2>Izaberite svoj savršen odmor</h2>
-    <p>Planina ili grad – smeštaj po vašoj meri</p>
-    <a href="#locations" class="btn">Pogledaj lokacije</a>
-  </section>
-
-  <section id="locations" class="locations">
-    <div class="location">
-      <img src="images/zlatibor.jpg" alt="Zlatibor smeštaj">
-      <h3>Zlatibor</h3>
-      <p>Uživajte u prirodi, svežem vazduhu i planinskom odmoru.</p>
-      <a href="zlatibor.html" class="btn">Detaljnije</a>
-    </div>
-    <div class="location">
-      <img src="images/novisad.jpg" alt="Novi Sad smeštaj">
-      <h3>Novi Sad</h3>
-      <p>Istražite kulturni centar Vojvodine i opustite se u našem apartmanu.</p>
-      <a href="novosad.html" class="btn">Detaljnije</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Mihajlo Apartmani</p>
-  </footer>
+  <!-- Glavni sadržaj stranice biće prikazan nakon izbora -->
+  <div id="mainContent" class="hidden">
+    <!-- Dinamički sadržaj se ubacuje ovde -->
+  </div>
 
   <script src="./assets/js/main.js"></script>
 </body>

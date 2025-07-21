@@ -1,0 +1,176 @@
+/* css/zlatibor.css */
+body {
+  font-family: 'Bodoni Moda', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EFDFBB;
+  color: #05472A;
+  font-size: 16px; /* standardna veličina */
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.hero-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* tamniji overlay */
+  z-index: -1;
+}
+
+.hero-video h1,
+.hero-video .cta-button {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.hero-video h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #906A3A;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #754e2c;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.services-section {
+  background-color: #EFDFBB;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #906A3A;
+  padding: 1rem 1rem 2rem; /* malo manje odozgo zbog slike */
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .hero-video h1 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
